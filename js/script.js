@@ -10,4 +10,20 @@ $(document).ready(function(){
         $(this).text('Open Menu');
      }
     });
+    
+});
+
+
+
+$(document).ready(function () {
+   //Testimonial Slider
+   $('.testimonials_slider').slick({
+       arrows: false,
+       dots: true,
+   });
+   //Top Slider
+   $('.homesliders').slick({
+       prevArrow: '<button type="button" class="slick-prev"></button>',
+       nextArrow: '<button type="button" class="slick-next"></button>'
+   });
 });
