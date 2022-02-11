@@ -38,10 +38,10 @@
     }
     header.top_header .wrapper nav.left_nav ul,
     header.top_header .wrapper nav.right_nav ul{
-    display: flex;
-    font-size: 18px;
-    line-height: 22px;
-    color: #433840;
+        display: flex;
+        font-size: 18px;
+        line-height: 22px;
+        color: #433840;
     }
     header.top_header .wrapper nav.left_nav ul li,
     header.top_header .wrapper nav.right_nav ul li{
@@ -54,15 +54,15 @@
     }
     header.top_header .wrapper nav.left_nav ul li a,
     header.top_header .wrapper nav.right_nav ul li a{
-    color: inherit;
-    text-decoration: none;
+        color: inherit;
+        text-decoration: none;
     
     
     }
     header.top_header .wrapper nav.left_nav ul li a:hover,
     header.top_header .wrapper nav.right_nav ul li a:hover{
-    color: #FEA3AC;
-    transition: all 300ms ease-in-out
+        color: #FEA3AC;
+        transition: all 300ms ease-in-out
     }
 
 
@@ -192,8 +192,8 @@
     }
      .height{
         height: 320px;
-    }
-    .post .thumbail .height{
+    } 
+    .home_height{
         height: 379px;
     }
 
@@ -317,6 +317,7 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        margin-left: 183px;
     }
 
     .team_list .team_number .image img {
@@ -351,6 +352,7 @@
         color: #433840;
         display: block;
         margin-bottom: 14px;
+        margin-right: 17px
     }
 
     .team_list .team_number .data p {
@@ -368,18 +370,22 @@
 
     .team_list .team_number .data .social {
         letter-spacing: 10px;
+        display: block;
+        margin-bottom: 5px;
     }
 
     .team_list .team_number:nth-child(2),
     .team_list .team_number:nth-child(3) {
         background: #DFEEB6;
         padding-left: 5px;
+        margin-left: 0;
+        margin-right: 60px;
     }
 
     .team_list .team_number:nth-child(3),
     .team_list .team_number:nth-child(4) {
-        margin-left: 0;
-        margin-right: 190px;
+        margin-left: 11px;
+        margin-right: 185px;
         padding-left: 5px;
     }
 
@@ -1345,11 +1351,15 @@
     img {
         height: auto;
     }
+    .menu_width{
+        width: 90px;
+    }
 
 
 /*Mobile Styles*/
 
 @media only screen and (max-width: 1380px){
+
     .homesliders .slide .title_one{
        top: 120px;
        left: 60%;
@@ -1362,7 +1372,7 @@
 
 @media only screen and (max-width: 1220px){
 
-   .post .thumbail .height{
+   .home_height{
     height: 366px;
     } 
 } 
@@ -1379,7 +1389,7 @@
     }
     .homesliders .slide .title_three {
         left: 20%;
-        top: 70%;
+        top: 325px;
         font-size: 40px;
         line-height: 40px;
     }
@@ -1408,15 +1418,18 @@
     .height{
         height: 300px;
     }
-    .post .thumbail .height{
-        height: 355px;
+    .home_height{
+        height: 345px;
     } 
 }
 
 @media only screen and (max-width: 1120px){
 
-    .post .thumbail .height{
-        height: 330px;
+    .home_height{
+        height: 340px;
+    }
+    .blog_arhive article.post h3 a{
+        font-size: 22px;
     }
 }
 
@@ -1426,17 +1439,23 @@
         line-height: normal;
     }
     .team_list .team_number .data .name{
-        padding-right: 0;
+        padding-right: 2px;
     }
     .team_list .team_number .image img{
         max-width: 216px;
     }
+    .blog_arhive article.post h3 a{
+        font-size: 20px;
+    }
     .height{
         height: 264px;
     }
-    .post .thumbail .height{
-        height: 310px;
-    } 
+    .menu_width{
+        width: 80px;
+    }
+    .home_height{
+        height: 320px;
+    }
 }
 
 
@@ -1454,12 +1473,12 @@
         width: 65%;
     }  
     .pricing_tables .price_item .description{
-        font-size: 19px;
+        font-size: 17px;
     }
     .height{
         height: 250px;
     }
-    .post .thumbail .height{
+    .home_height{
         height: 300px;
     }
 }
@@ -1470,7 +1489,8 @@
         line-height: 30px;
     }
     .team_list .team_number {
-        width: calc(98% - 201px); 
+        width: calc(100% - 201px);
+        margin-left: 150px; 
     }
     .team_list .team_number .data p{
         font-size: 15px;
@@ -1479,12 +1499,37 @@
     .team_list .team_number .image img{
         max-width: 240px;
     }
+    .team_list .team_number:nth-child(2){
+        margin-left: 150px;
+        margin-right: 17px;
+    }
+    .team_list .team_number:nth-child(3),
+    .team_list .team_number:nth-child(4){
+        margin-left: 150px;
+        margin-right: 17px;
+
+    }
+    .team_list .team_number:nth-child(3) .image,
+    .team_list .team_number:nth-child(4) .image{
+        order: 1;
+    }
+    .team_list .team_number:nth-child(3) .image img, 
+    .team_list .team_number:nth-child(4) .image img{
+        margin-left: -128px;
+    }
+    .team_list .team_number:nth-child(3) .data, 
+    .team_list .team_number:nth-child(4) .data{
+        text-align: left;
+        margin-left: 137px;
+        margin-right: 0;
+    }
     .height{
         height: 234px;
     }
-    .post .thumbail .height{
+    .home_height{
         height: 280px;
     }
+    
     
 }
 
@@ -1495,10 +1540,16 @@
         padding: 15px 15px;
         margin-right: 10px;
     } 
+    .blog_arhive article.post h3 a{
+        font-size: 17px;
+    }
+    .blog_arhive article.post p{
+        font-size: 13px;
+    }
     .height{
         height: 219px;
     }
-    .post .thumbail .height{
+    .home_height{
         height: 260px;
     }
 }
@@ -1511,7 +1562,7 @@
     }
     .homesliders .slide .title_three {
         left: 17%;
-        top: 70%;
+        top: 260px;
         font-size: 30px;
         line-height: 32px;
     }
@@ -1608,9 +1659,6 @@
     .home_subscribe {
         margin-top: 80px;
     }
-    .team_list .team_number {
-        width: 100%;
-    }
     .pricing_tables .price_item .plan {
         font-size: 30px;
     }
@@ -1655,14 +1703,20 @@
         margin-right: auto;
         margin-left: auto;
     }
-    .post .thumbail .height{
+    .blog_arhive article.post h3 a{
+        font-size: 24px;
+    }
+    .blog_arhive article.post p{
+        font-size: 15px;
+    }
+    .home_height{
         height: 637px;
     }
 }
 
 @media only screen and (max-width: 800px){
 
-    .post .thumbail .height{
+    .home_height{
         height: 617px;
     }
 }
@@ -1673,16 +1727,31 @@
         line-height: 0;
         margin-left: 20px;
     }
-    .post .thumbail .height{
+    .home_height{
         height: 581px;
     }
+    .menu_width{
+        width: 55px;
+    }
+
+}
+
+@media only screen and (max-width: 720px){
+   
+    .home_height{
+         height: 548px;
+     }
 }
 
 @media only screen and (max-width: 700px){
 
-    .post .thumbail .height{
+    .home_height{
         height: 541px;
     }
+    .our_menu .box_title {
+        margin-top: -50px;
+    }
+  
 }
 
 @media only screen and (max-width: 669px){
@@ -1693,10 +1762,18 @@
     .pricing_tables .price_item .description{
       font-size: 15px;
     }
-    .post .thumbail .height{
-        height: 521px;
+    .home_height{
+        height: 510px;
     }
 }
+
+@media only screen and (max-width: 635px){
+
+    .home_height{
+        height: 483px;
+    }
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -1773,8 +1850,8 @@
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      margin-top: -70px;
-      margin-bottom: 10px;
+      margin-top: -75px;
+      margin-bottom: 35px;
     }
     .menu_info .wrapper .col_right h3 {
       -webkit-box-ordinal-group: 2;
@@ -1811,7 +1888,17 @@
       font-size: 14px;
       line-height: 17px;
     }
-    
+    .team_list .team_number:nth-child(2)
+    .team_list .team_number:nth-child(3),
+    .team_list .team_number:nth-child(4){
+        margin-right: 0;
+    }
+    .team_list .team_number:nth-child(3) .data, 
+    .team_list .team_number:nth-child(4) .data{
+        text-align: left;
+        margin-left: 115px;
+        margin-right: 0;
+    }
     .menu_list .menu_item .price{
       margin-top: 25px;
       font-size: 47px;
@@ -1819,8 +1906,15 @@
     .bottom_footer .wrapper .social{
       margin-bottom: 10px;
     }
-    .post .thumbail .height{
+    .home_height{
         height: 455px;
+    }
+}
+
+@media only screen and (max-width: 566px){
+
+    .home_height{
+        height: 430px;
     }
 }
 
@@ -1836,15 +1930,34 @@
     .pricing_tables .pricing .price_item{
         width: 78%;
     }
-    .post .thumbail .height{
+    .home_height{
         height: 410px;
     }
 }
 
 @media only screen and (max-width: 500px){
    
-    .post .thumbail .height{
+    .home_height{
         height: 390px;
+    }
+    .team_list .team_number .image img{
+        max-width: 190px;
+    }
+    .team_list .team_number:nth-child(3) .data,
+    .team_list .team_number:nth-child(4) .data{
+        margin-left: 78px;
+    }
+    .team_list .team_number .data .social{
+        display: block;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 478px){
+    
+    .home_height{
+        height: 370px;
     }
 }
 
@@ -1854,24 +1967,29 @@
         width: 100%;
         margin-left: 154px;
         padding-left: 5px;
-        }
+    }
     .team_list .team_number:nth-child(2),
     .team_list .team_number:nth-child(3) {
         background: #DFEEB6;
         padding-left: 5px;
         margin-left: 154px;
+        margin-right: 0;
     }
 
     .team_list .team_number:nth-child(3),
     .team_list .team_number:nth-child(4) {
-        margin-left: -5px;
-        margin-right: 147px;
+        margin-left: 152px;
+        margin-right: 0;
         padding-left: 5px;
     }
     .team_list .team_number:nth-child(3) .image img, 
     .team_list .team_number:nth-child(4) .image img{
-        margin-left: 0;
+        margin-left: -162px;
         margin-right: -153px;
+    }
+    .team_list .team_number:nth-child(3) .data,
+    .team_list .team_number:nth-child(4) .data {
+        margin-left: 55px;
     }
     .team_list .team_number .data p{
         text-align: left;
@@ -1889,7 +2007,7 @@
     }
     .team_list .team_number .data .name{
         text-align: left;
-        padding-left: 10px;
+        padding-left: 5px;
     }
     .team_list .team_number .data .social{
         display: block;
@@ -1909,14 +2027,21 @@
         letter-spacing: 5px;
         margin-bottom: 14px;
     }
-    .post .thumbail .height{
+    .home_height{
         height: 350px;
     }
 }
 
+@media only screen and (max-width: 428px){
+
+    .home_height{
+        height: 330px;
+    }    
+}
+
 @media only screen and (max-width: 400px){
 
-    .post .thumbail .height{
+    .home_height{
         height: 310px;
     }
     
@@ -1933,9 +2058,28 @@
     .pricing_tables .pricing .price_item {
         width: 100%;
     }
+    .team_list .team_number{
+        margin-left: 116px;
+    }
+    .team_list .team_number:nth-child(2), 
+    .team_list .team_number:nth-child(3){
+        margin-left: 116px;
+    }
+    .team_list .team_number:nth-child(3), 
+    .team_list .team_number:nth-child(4){
+        margin-left: 116px;
+    }
+    .team_list .team_number:nth-child(3) .image img,
+    .team_list .team_number:nth-child(4) .image img{
+        margin-left: -124px;
+    }
+    .team_list .team_number:nth-child(3) .data, 
+    .team_list .team_number:nth-child(4) .data{
+        margin-left: 68px;
+    }
     .team_list .team_number .image img{
-    max-width: 199px;
-    margin-left: -163px;
+        max-width: 176px;
+        margin-left: -125px
     }
     .team_list .team_number .data .post{
         padding-left: 8px;
@@ -1949,10 +2093,38 @@
     form.subscribe .email{
         font-size: 18px;
     }
-    .post .thumbail .height{
+    .home_height{
         height: 300px;
+    }
+    .menu_width{
+        width: 45px;
+    } 
+    .menu_list .menu_item p {
+        font-size: 13px;
+        line-height: 14px
     }
 }
 
+@media only screen and (max-width: 360px){
+     
+    .home_height{
+        height: 285px;
+    }
+    form.subscribe .email{
+        font-size: 15px;
+    }
+    .bottom_footer p{
+        font-size: 11px;
+    }
+    .bottom_footer .wrapper .social {
+        letter-spacing: 3px;
+    }
+    .blog_arhive article.post h3 a {
+        font-size: 20px;
+    }
+    .blog_arhive article.post p{
+        font-size: 14px;
+    }
+}
 
 
